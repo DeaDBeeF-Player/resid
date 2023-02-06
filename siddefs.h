@@ -87,6 +87,9 @@ extern "C"
 #ifndef RESID_VERSION_CC
 extern const char* resid_version_string;
 #else
+#ifndef VERSION
+#define VERSION ""
+#endif
 const char* resid_version_string = VERSION;
 #endif
 }
